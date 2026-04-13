@@ -1,0 +1,194 @@
+export const CAP_STYLES = [
+  { id: '5-panel', name: 'Baseball Cap - 5 Panel', description: 'Classic 5-panel construction for a clean, seamless front.' },
+  { id: '6-panel', name: 'Baseball Cap - 6 Panel', description: 'Traditional 6-panel design for a structured, athletic look.' },
+  { id: 'moon-cut', name: 'Baseball Cap - Moon Cut', description: 'Unique moon-cut panels for a modern, ergonomic fit.' },
+  { id: 'snapback', name: 'Snapback', description: 'Urban style with a flat peak and adjustable snap closure.' },
+  { id: 'runner-ultra', name: 'Runner Ultra Cap', description: 'Lightweight, breathable, and built for high-performance endurance.' },
+  { id: 'side-mesh', name: 'Cap with Side Mesh', description: 'Enhanced ventilation with premium mesh side panels.' },
+  { id: 'baggy', name: 'Baggy Cap', description: 'Relaxed, oversized fit for a casual, heritage-inspired aesthetic.' },
+  { id: 'visor', name: 'Performance Visor', description: 'Open-top design for maximum breathability and sun protection.' },
+  { id: 'golf', name: 'Golf Cap', description: 'Sophisticated silhouettes designed for the green.' },
+  { id: 'hat', name: 'Wide Brim Hat', description: 'Full coverage for outdoor adventures and sun safety.' },
+  { id: 'woollen', name: 'Woollen Cap', description: 'Premium knit construction for warmth and comfort.' },
+  { id: 'bucket', name: 'Bucket Hat', description: 'Iconic street-style silhouette with all-around protection.' },
+  { id: 'air-hostess', name: 'Air Hostess Cap', description: 'Elegant, structured headwear for professional uniforms.' },
+  { id: 'chef', name: 'Chef Cap', description: 'Functional and professional headwear for culinary experts.' },
+  { id: 'cadet', name: 'Cadet Cap', description: 'Military-inspired flat-top design with a short peak.' },
+  { id: 'beanie', name: 'Beanie', description: 'Versatile, snug-fit knit caps for all-season style.' },
+  { id: 'fishing', name: 'Fishing Cap', description: 'Specialized protection with neck flaps and secure straps.' },
+];
+
+export const CROWN_TYPES = [
+  { name: 'Low-Profile', description: 'Lower crown height for a closer, more subtle fit.' },
+  { name: 'Mid-Profile', description: 'The standard height for a balanced, classic look.' },
+  { name: 'High-Profile', description: 'Maximum height for a bold, structured statement.' },
+  { name: 'Structured', description: 'Reinforced front panels to maintain shape.' },
+  { name: 'Semi-Structured', description: 'Lightly reinforced for a natural yet clean look.' },
+  { name: 'Unstructured', description: 'Soft, flexible panels for a relaxed, "dad hat" feel.' },
+];
+
+export const PEAK_STYLES = [
+  { name: 'Curved Peak', type: 'Style' },
+  { name: 'Flat Peak', type: 'Style' },
+  { name: 'Round Shape', type: 'Shape' },
+  { name: 'Square Shape', type: 'Shape' },
+];
+
+export const FABRICS = [
+  { 
+    category: 'Polyester Knitted', 
+    items: [
+      { name: 'Dot Knit', colors: ['R.Blue', 'Orange', 'Red'] },
+      { name: 'Rice Knit', colors: ['Sky.Blue', 'Green', 'Grey'] },
+      { name: 'Crown Knit', colors: ['Sky.Blue', 'Grey', 'Red'] },
+      { name: 'Waffle', colors: ['Sky.Blue', 'Green', 'Grey'] },
+      { name: 'Diamond Knit', colors: ['Red', 'Green', 'Blue'] },
+      { name: 'Diagnol', colors: [] },
+      { name: 'Tin Tin', colors: [] },
+      { name: 'Micro Matty', colors: [] },
+      { name: 'P. Dryfit', colors: [] },
+      { name: 'Caramel', colors: [] }
+    ] 
+  },
+  { 
+    category: 'Cotton Knitted', 
+    items: [
+      { name: 'Terry', colors: ['Navy Blue', 'Light Grey', 'Green'] },
+      { name: 'Hosiery', colors: ['Navy Blue', 'Grey', 'Sky Blue'] }
+    ] 
+  },
+  { 
+    category: 'Polyester Woven', 
+    items: [
+      { name: 'NS', colors: ['Maroon/Magenta', 'Navy Blue', 'Dark Teal'] },
+      { name: 'Dobby', colors: ['Black', 'Light Grey', 'Dark Grey'] },
+      { name: 'Twill', colors: ['Sky Blue', 'Red/White', 'Black/Grey'] },
+      { name: 'TZ', colors: ['Grey Blue', 'Solar Blue', 'Blue'] },
+      { name: 'NS Melange', colors: ['Blue', 'Grey'] }
+    ] 
+  },
+  { 
+    category: 'Cotton Woven', 
+    items: [
+      { name: 'Twill', colors: ['Navy/Royal Blue', 'Maroon/Black', 'Golden/Beige'] },
+      { name: 'Terry', colors: ['Royal Blue', 'Bright Green', 'Red'] }
+    ] 
+  },
+  { 
+    category: 'Special Materials', 
+    items: [
+      { name: 'Matty Canvas', colors: ['Matty', 'Salmon/Coral', 'Charcoal'] },
+      { name: 'Denim', colors: ['Black', 'Grey', 'Navy Dark', 'Light Blue'] },
+      { name: 'Suede', colors: ['Black', 'Grey', 'Red', 'Brown'] },
+      { name: 'Corduroy', colors: ['Black', 'Brown', 'Yellow', 'Grey'] },
+      { name: 'Woollen', colors: ['Red', 'Black', 'Blue', 'Grey'] }
+    ] 
+  },
+  { 
+    category: 'Printed', 
+    items: [
+      { name: 'Cotton Prints', colors: ['Camo', 'Tennis', 'Abstract'] },
+      { name: 'Polyester Prints', colors: ['Blue Camo', 'Dark Camo', 'Geometric'] },
+      { name: 'NS Prints', colors: ['Grey Pattern', 'Grid', 'Dots'] }
+    ] 
+  },
+];
+
+export const COLORS = [
+  { name: 'Black', hex: '#000000' },
+  { name: 'Grey', hex: '#808080' },
+  { name: 'Royal Blue', hex: '#4169E1' },
+  { name: 'Sky Blue', hex: '#87CEEB' },
+  { name: 'Navy Blue', hex: '#000080' },
+  { name: 'Red', hex: '#FF0000' },
+  { name: 'Orange', hex: '#FFA500' },
+  { name: 'Green', hex: '#008000' },
+  { name: 'Maroon', hex: '#800000' },
+  { name: 'Golden', hex: '#FFD700' },
+  { name: 'Beige', hex: '#F5F5DC' },
+  { name: 'White', hex: '#FFFFFF' },
+  { name: 'Yellow', hex: '#FFFF00' },
+  { name: 'Brown', hex: '#A52A2A' },
+  { name: 'Teal', hex: '#008080' },
+  { name: 'Maroon/Magenta', hex: '#8B0000' },
+  { name: 'Dark Teal', hex: '#004D40' },
+  { name: 'Solar Blue', hex: '#007FFF' },
+  { name: 'Bright Green', hex: '#66FF00' },
+];
+
+export const BRANDING_TYPES = [
+  { name: 'Embroidery', description: 'Classic high-density thread work.' },
+  { name: '3D Puff Embroidery', description: 'Raised lettering for a bold, tactile effect.' },
+  { name: 'Embroidered Patch', description: 'Detailed patches stitched onto the cap.' },
+  { name: 'Woven Patch', description: 'Fine-detail woven designs for a premium finish.' },
+  { name: 'Leather Patch', description: 'Genuine or faux leather for a rugged, high-end look.' },
+  { name: 'Felt Applique', description: 'Soft, layered fabric for a vintage collegiate feel.' },
+  { name: 'Woven Label', description: 'Subtle branding for seams and closures.' },
+  { name: 'Sublimated Patch', description: 'Full-color photographic detail on fabric.' },
+  { name: 'Screen Print', description: 'Durable, vibrant ink application.' },
+  { name: 'Sublimation', description: 'All-over, permanent color integration.' },
+  { name: 'Heat Transfer', description: 'Precision vinyl or ink transfers.' },
+  { name: 'PVC Patch', description: 'Modern, 3D rubberized branding.' },
+];
+
+export const BRANDING_LOCATIONS = [
+  'Front Crown', 'Lower Right Crown', 'Lower Left Crown', 'Left Side Panel', 'Right Side Panel', 'Right Rear Panel', 'Left Rear Panel', 'Right Top Peak', 'Left Top Peak', 'Under Peak', 'Above Closure', 'On Closure'
+];
+
+export const ADDONS = [
+  { name: 'Interior Label', description: 'Premium white printed sweatband label.' },
+  { name: 'Woven Tag', description: 'Subtle red woven tag for side seam detail.' },
+  { name: 'Seam Tape', description: 'Decorative tape covering interior seams.' },
+  { name: 'Peak Rope', description: 'Rope/cord detail on brim with embroidery.' },
+  { name: 'Woven Flag Tag', description: 'Small woven flag label for side seam.' },
+  { name: 'Under Peak Print', description: 'Full-color sublimation print under brim.' },
+  { name: 'Printed Fabric', description: 'Textured geometric print with embossed badge.' },
+  { name: 'Embossed Buckle', description: 'Metal buckle with embossed brand logo.' },
+];
+
+export const CLIENTS = {
+  brands: ['Roadster', 'Skechers', 'fcuk', 'SS', 'SG', 'Wildcraft', 'Nautica', 'HRX', 'Vavy', 'play'],
+  associations: [
+    'Malta Cricket', 'Indian Deaf Cricket', 'Baroda Cricket', 'Assam Cricket', 
+    'Sharjah Cricket', 'Nagaland Cricket', 'Bihar Cricket', 'Manipur Cricket', 
+    'Indian Railways', 'Sikkim Cricket', 'Pondicherry Cricket'
+  ],
+  teams: [
+    'World Legends 11', 'India Legends', 'Gujarat Giants', 'Manipal Tigers', 
+    'Bangla Tigers', 'Moratu Marvels', 'Deccan Gladiators', 'Salem Spartans',
+    'Dubai Capitals', 'Madurai Panthers', 'Galle Marvels', 'Grand Cholas',
+    'Bhopal Leopards', 'Malwa Panthers', 'Chennai Braves', 'Harare Hurricanes',
+    'Miami Lions', 'Delhi Devils', 'Colombo Lions', 'Brampton Wolves'
+  ]
+};
+
+export const CONTACT_INFO = {
+  factories: [
+    {
+      name: 'Factory 1: Athletico Royaleal Pvt. Ltd.',
+      address: 'Plot-5A, Khasra No-15/6, New Mandoli Industrial Area, Phase-1, New Delhi – 110093',
+      email: 'athleticoroyaal@gmail.com',
+      phone: '+91 85957 00441'
+    },
+    {
+      name: 'Factory 2: Cascades (India)',
+      address: 'C-7, Mandoli Industrial Area, Phase-1, Sewa Dham Road, Near Shivani Dharam Kanta, New Delhi – 110093',
+      email: 'orange.cascadesindia@gmail.com',
+      phone: '+91 88820 38487'
+    }
+  ],
+  presence: [
+    {
+      name: 'Exclusive Showroom – Kragbuzz Retail',
+      address: 'Commercial Unit No-3F-77S, Wave City Center, Plot No-CC-001, Sector-32, Noida, Uttar Pradesh – 201303',
+      email: 'kragbuzzretail@gmail.com',
+      phone: '+91 93153 62147 | +91 82874 61240'
+    },
+    {
+      name: 'Globale Sports Konnect',
+      address: 'FUME Co-Working, 2nd Floor, A9 GDITL Northex Tower, Netaji Subhash Place, New Delhi – 110034',
+      email: 'globalesportskonnect@gmail.com',
+      phone: '+91 98737 77697'
+    }
+  ]
+};
