@@ -32,7 +32,8 @@ import {
   BRANDING_LOCATIONS, 
   ADDONS, 
   CLIENTS, 
-  CONTACT_INFO 
+  CONTACT_INFO, 
+  CLOSURE_STYLES
 } from './data';
 import Header from './Header';
 import Footers from './Footer';
@@ -247,7 +248,7 @@ const StyleCard = ({ style, index }: { style: any, index: number, key?: string }
     <div className="p-4 grid grid-cols-2 gap-2 bg-zinc-800/30">
       <div className="col-span-2 aspect-square overflow-hidden rounded-xl bg-zinc-800 relative">
         <img 
-          src={`https://picsum.photos/seed/kragcaps-${style.id}-1/600/600`} 
+          src={`${style.img1}`} 
           alt={`${style.name} variation 1`}
           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 opacity-90"
           referrerPolicy="no-referrer"
@@ -258,7 +259,7 @@ const StyleCard = ({ style, index }: { style: any, index: number, key?: string }
       </div>
       <div className="aspect-square overflow-hidden rounded-lg bg-zinc-800">
         <img 
-          src={`https://picsum.photos/seed/kragcaps-${style.id}-2/300/300`} 
+          src={`${style.img2}`} 
           alt={`${style.name} variation 2`}
           className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity"
           referrerPolicy="no-referrer"
@@ -266,7 +267,8 @@ const StyleCard = ({ style, index }: { style: any, index: number, key?: string }
       </div>
       <div className="aspect-square overflow-hidden rounded-lg bg-zinc-800">
         <img 
-          src={`https://picsum.photos/seed/kragcaps-${style.id}-3/300/300`} 
+          // src={`https://picsum.photos/seed/kragcaps-${style.id}-3/300/300`} 
+          src={`${style.img3}`} 
           alt={`${style.name} variation 3`}
           className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity"
           referrerPolicy="no-referrer"
@@ -403,7 +405,7 @@ const CustomizationSection = () => {
                   <div key={idx} className="group bg-zinc-900/50 rounded-2xl border border-zinc-800 hover:border-red-600/30 transition-all overflow-hidden">
                     <div className="aspect-square bg-zinc-800 overflow-hidden relative">
                       <img 
-                        src={`https://picsum.photos/seed/crown-${type.name.toLowerCase().replace(/\s+/g, '-')}/400/400`} 
+                        src={`${type.img1}`} 
                         alt={type.name}
                         className="w-full h-full object-cover opacity-40 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
                         referrerPolicy="no-referrer"
@@ -432,7 +434,7 @@ const CustomizationSection = () => {
                   <div key={idx} className="bg-zinc-900/50 rounded-2xl border border-zinc-800 flex flex-col overflow-hidden group hover:border-red-600/30 transition-all">
                     <div className="aspect-square bg-zinc-800 overflow-hidden">
                       <img 
-                        src={`https://picsum.photos/seed/peak-${peak.name.toLowerCase().replace(/\s+/g, '-')}/400/400`} 
+                        src={`${peak.img1}`} 
                         alt={peak.name}
                         className="w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500"
                         referrerPolicy="no-referrer"
@@ -465,23 +467,18 @@ const CustomizationSection = () => {
                 transition={{ duration: 0.3 }}
                 className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4"
               >
-                {[
-                  'Velcro', 'Plastic Snap', 'Metal Pin Buckle', 'Coature NT-OH', 
-                  'Metal Buckle + Tuck In', 'Metal Belt Buckle', 'String Adjuster', 
-                  'Strap Plastic Buckle', 'Plastic Runner Adjuster', 'Elastic Strap', 
-                  'Fitted Style', 'Plastic Buckle'
-                ].map((closure, idx) => (
+                {CLOSURE_STYLES.map((closure, idx) => (
                   <div key={idx} className="group bg-zinc-900/50 rounded-xl border border-zinc-800 overflow-hidden hover:border-red-600/30 transition-all">
                     <div className="aspect-square bg-zinc-800 overflow-hidden relative">
                       <img 
-                        src={`https://picsum.photos/seed/closure-${closure.toLowerCase().replace(/\s+/g, '-')}/300/300`} 
+                        src={`${closure.img1}`} 
                         alt={closure}
                         className="w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500"
                         referrerPolicy="no-referrer"
                       />
                     </div>
                     <div className="p-3 text-center bg-zinc-900">
-                      <span className="text-[10px] text-gray-400 font-bold uppercase tracking-tighter">{closure}</span>
+                      <span className="text-[10px] text-gray-400 font-bold uppercase tracking-tighter">{closure.name}</span>
                     </div>
                   </div>
                 ))}
@@ -551,14 +548,14 @@ const FabricSection = () => {
                       <div key={ci} className="space-y-2">
                         <div className="aspect-square rounded-lg overflow-hidden bg-zinc-800 border border-zinc-700 group-hover:border-zinc-600 transition-all">
                           <img 
-                            src={`https://picsum.photos/seed/fabric-${item.name.toLowerCase().replace(/\s+/g, '-')}-${color.toLowerCase().replace(/\s+/g, '-')}/150/150`} 
+                            src={`${color.img1}`} 
                             alt={`${item.name} - ${color}`}
                             className="w-full h-full object-cover opacity-80 hover:opacity-100 hover:scale-110 transition-all duration-500"
                             referrerPolicy="no-referrer"
                           />
                         </div>
                         <span className="text-[9px] text-gray-500 font-bold uppercase tracking-tighter block text-center truncate">
-                          {color}
+                          {color.cn}
                         </span>
                       </div>
                     ))
@@ -567,16 +564,16 @@ const FabricSection = () => {
                     [1, 2, 3].map((_, ci) => (
                       <div key={ci} className="space-y-2">
                         <div className="aspect-square rounded-lg overflow-hidden bg-zinc-800 border border-zinc-700">
-                          <img 
+                          {/* <img 
                             src={`https://picsum.photos/seed/fabric-${item.name.toLowerCase().replace(/\s+/g, '-')}-${ci}/150/150`} 
                             alt={item.name}
                             className="w-full h-full object-cover opacity-40"
                             referrerPolicy="no-referrer"
-                          />
+                          /> */}
                         </div>
-                        <span className="text-[9px] text-gray-600 font-bold uppercase tracking-tighter block text-center">
+                        {/* <span className="text-[9px] text-gray-600 font-bold uppercase tracking-tighter block text-center">
                           Sample {ci + 1}
-                        </span>
+                        </span> */}
                       </div>
                     ))
                   )}
@@ -623,7 +620,7 @@ const BrandingSection = () => (
           <div key={idx} className="bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-red-600/30 transition-all group">
             <div className="aspect-video overflow-hidden bg-zinc-800 relative">
               <img 
-                src={`https://picsum.photos/seed/branding-${type.name.toLowerCase().replace(/\s+/g, '-')}/400/225`} 
+                src={`${type.img1}`} 
                 alt={type.name}
                 className="w-full h-full object-cover opacity-60 group-hover:scale-110 group-hover:opacity-100 transition-all duration-500"
                 referrerPolicy="no-referrer"
@@ -645,7 +642,7 @@ const BrandingSection = () => (
             <div key={idx} className="group flex flex-col items-center gap-4 text-center">
               <div className="w-full aspect-square rounded-2xl bg-zinc-900 border border-zinc-800 overflow-hidden relative group-hover:border-red-600/50 transition-all">
                 <img 
-                  src={`https://picsum.photos/seed/location-${loc.toLowerCase().replace(/\s+/g, '-')}/300/300`} 
+                  src={`${loc.img1}`} 
                   alt={loc}
                   className="w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500"
                   referrerPolicy="no-referrer"
@@ -654,7 +651,7 @@ const BrandingSection = () => (
                   {idx + 1}
                 </div>
               </div>
-              <span className="text-[10px] text-gray-400 font-bold uppercase tracking-tighter group-hover:text-white transition-colors">{loc}</span>
+              <span className="text-[10px] text-gray-400 font-bold uppercase tracking-tighter group-hover:text-white transition-colors">{loc.name}</span>
             </div>
           ))}
         </div>
@@ -676,7 +673,7 @@ const AddonsSection = () => (
           <div key={idx} className="group bg-zinc-900/30 border border-zinc-800 rounded-2xl overflow-hidden hover:bg-zinc-900 transition-all">
             <div className="aspect-video bg-zinc-800 overflow-hidden relative">
               <img 
-                src={`https://picsum.photos/seed/addon-${addon.name.toLowerCase().replace(/\s+/g, '-')}/400/225`} 
+                src={`${addon.img1}`} 
                 alt={addon.name}
                 className="w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500"
                 referrerPolicy="no-referrer"
@@ -705,24 +702,24 @@ const SizingSection = () => (
         <div className="p-6 md:p-12 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 border-b border-zinc-800">
           <div className="aspect-video bg-zinc-800 rounded-2xl overflow-hidden relative group">
             <img 
-              src="https://picsum.photos/seed/kragcaps-sizing-1/800/450" 
+              src="cap1.png" 
               alt="Adult Sizing Guide"
               className="w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
               referrerPolicy="no-referrer"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
-              <span className="text-white font-bold uppercase tracking-widest text-[10px]">Adult Fit Guide</span>
+              {/* <span className="text-white font-bold uppercase tracking-widest text-[10px]">Adult Fit Guide</span> */}
             </div>
           </div>
           <div className="aspect-video bg-zinc-800 rounded-2xl overflow-hidden relative group">
             <img 
-              src="https://picsum.photos/seed/kragcaps-sizing-2/800/450" 
+              src="cap3.png" 
               alt="Junior Sizing Guide"
               className="w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
               referrerPolicy="no-referrer"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
-              <span className="text-white font-bold uppercase tracking-widest text-[10px]">Junior Fit Guide</span>
+              {/* <span className="text-white font-bold uppercase tracking-widest text-[10px]">Junior Fit Guide</span> */}
             </div>
           </div>
         </div>
@@ -799,13 +796,13 @@ const PortfolioSection = () => (
             <div key={idx} className="w-64 bg-zinc-900/30 border border-zinc-800 rounded-2xl p-6 flex flex-col items-center justify-center gap-4 hover:bg-zinc-900 hover:border-red-600/30 transition-all shrink-0">
               <div className="w-full aspect-square bg-zinc-800 rounded-xl overflow-hidden relative">
                 <img 
-                  src={`https://picsum.photos/seed/brand-${brand.toLowerCase().replace(/\s+/g, '-')}/200/200`} 
+                  src={`${brand.img1}`} 
                   alt={brand}
                   className="w-full h-full object-cover opacity-50 grayscale group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-500"
                   referrerPolicy="no-referrer"
                 />
               </div>
-              <span className="text-[10px] text-gray-500 font-black uppercase tracking-tighter text-center group-hover:text-white transition-colors">{brand}</span>
+              <span className="text-[10px] text-gray-500 font-black uppercase tracking-tighter text-center group-hover:text-white transition-colors">{brand.name}</span>
             </div>
           ))}
         </Marquee>
@@ -819,7 +816,7 @@ const PortfolioSection = () => (
             <div key={idx} className="w-56 group bg-zinc-900/30 border border-zinc-800 rounded-2xl overflow-hidden hover:border-red-600/30 transition-all shrink-0">
               <div className="aspect-square bg-zinc-800 overflow-hidden relative">
                 <img 
-                  src={`https://picsum.photos/seed/team-${team.toLowerCase().replace(/\s+/g, '-')}/300/300`} 
+                  src={`${team.img1}`} 
                   alt={team}
                   className="w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500"
                   referrerPolicy="no-referrer"
@@ -827,7 +824,7 @@ const PortfolioSection = () => (
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60" />
               </div>
               <div className="p-4 text-center bg-zinc-900">
-                <span className="text-[10px] text-gray-400 font-bold uppercase tracking-widest block leading-tight group-hover:text-white transition-colors">{team}</span>
+                <span className="text-[10px] text-gray-400 font-bold uppercase tracking-widest block leading-tight group-hover:text-white transition-colors">{team.name}</span>
               </div>
             </div>
           ))}
@@ -842,14 +839,14 @@ const PortfolioSection = () => (
             <div key={idx} className="w-72 group bg-zinc-900/30 border border-zinc-800 rounded-2xl overflow-hidden hover:border-red-600/30 transition-all flex flex-col shrink-0">
               <div className="aspect-[16/9] bg-zinc-800 overflow-hidden relative">
                 <img 
-                  src={`https://picsum.photos/seed/assoc-${assoc.toLowerCase().replace(/\s+/g, '-')}/400/225`} 
+                  src={`${assoc.img1}`} 
                   alt={assoc}
                   className="w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-all duration-500"
                   referrerPolicy="no-referrer"
                 />
               </div>
               <div className="p-4 text-center bg-zinc-900 flex-1 flex items-center justify-center">
-                <span className="text-[10px] text-gray-400 font-bold uppercase tracking-widest leading-tight group-hover:text-white transition-colors">{assoc}</span>
+                <span className="text-[10px] text-gray-400 font-bold uppercase tracking-widest leading-tight group-hover:text-white transition-colors">{assoc.name}</span>
               </div>
             </div>
           ))}

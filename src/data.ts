@@ -1,44 +1,57 @@
 export const CAP_STYLES = [
-  { id: '5-panel', name: 'Baseball Cap - 5 Panel', description: 'Classic 5-panel construction for a clean, seamless front.' },
-  { id: '6-panel', name: 'Baseball Cap - 6 Panel', description: 'Traditional 6-panel design for a structured, athletic look.' },
-  { id: 'moon-cut', name: 'Baseball Cap - Moon Cut', description: 'Unique moon-cut panels for a modern, ergonomic fit.' },
-  { id: 'snapback', name: 'Snapback', description: 'Urban style with a flat peak and adjustable snap closure.' },
-  { id: 'runner-ultra', name: 'Runner Ultra Cap', description: 'Lightweight, breathable, and built for high-performance endurance.' },
-  { id: 'side-mesh', name: 'Cap with Side Mesh', description: 'Enhanced ventilation with premium mesh side panels.' },
-  { id: 'baggy', name: 'Baggy Cap', description: 'Relaxed, oversized fit for a casual, heritage-inspired aesthetic.' },
-  { id: 'visor', name: 'Performance Visor', description: 'Open-top design for maximum breathability and sun protection.' },
-  { id: 'golf', name: 'Golf Cap', description: 'Sophisticated silhouettes designed for the green.' },
-  { id: 'hat', name: 'Wide Brim Hat', description: 'Full coverage for outdoor adventures and sun safety.' },
-  { id: 'woollen', name: 'Woollen Cap', description: 'Premium knit construction for warmth and comfort.' },
-  { id: 'bucket', name: 'Bucket Hat', description: 'Iconic street-style silhouette with all-around protection.' },
-  { id: 'air-hostess', name: 'Air Hostess Cap', description: 'Elegant, structured headwear for professional uniforms.' },
-  { id: 'chef', name: 'Chef Cap', description: 'Functional and professional headwear for culinary experts.' },
-  { id: 'cadet', name: 'Cadet Cap', description: 'Military-inspired flat-top design with a short peak.' },
-  { id: 'beanie', name: 'Beanie', description: 'Versatile, snug-fit knit caps for all-season style.' },
-  { id: 'fishing', name: 'Fishing Cap', description: 'Specialized protection with neck flaps and secure straps.' },
+  { id: '5-panel', name: 'Baseball Cap - 5 Panel', description: 'Classic 5-panel construction for a clean, seamless front.',img1:'cap1.png',img2:'cap1.png',img3:'cap1.png' },
+  { id: '6-panel', name: 'Baseball Cap - 6 Panel', description: 'Traditional 6-panel design for a structured, athletic look.' ,img1:'cap1.png',img2:'cap1.png',img3:'cap1.png' },
+  { id: 'moon-cut', name: 'Baseball Cap - Moon Cut', description: 'Unique moon-cut panels for a modern, ergonomic fit.',img1:'cap1.png',img2:'cap1.png',img3:'cap1.png'  },
+  { id: 'snapback', name: 'Snapback', description: 'Urban style with a flat peak and adjustable snap closure.',img1:'cap1.png',img2:'cap1.png',img3:'cap1.png'  },
+  { id: 'runner-ultra', name: 'Runner Ultra Cap', description: 'Lightweight, breathable, and built for high-performance endurance.' ,img1:'cap1.png',img2:'cap1.png',img3:'cap1.png' },
+  { id: 'side-mesh', name: 'Cap with Side Mesh', description: 'Enhanced ventilation with premium mesh side panels.',img1:'cap1.png',img2:'cap1.png',img3:'cap1.png'  },
+  { id: 'baggy', name: 'Baggy Cap', description: 'Relaxed, oversized fit for a casual, heritage-inspired aesthetic.',img1:'cap1.png',img2:'cap1.png',img3:'cap1.png'  },
+  { id: 'visor', name: 'Performance Visor', description: 'Open-top design for maximum breathability and sun protection.',img1:'cap1.png',img2:'cap1.png',img3:'cap1.png'  },
+  { id: 'golf', name: 'Golf Cap', description: 'Sophisticated silhouettes designed for the green.' ,img1:'cap1.png',img2:'cap1.png',img3:'cap1.png' },
+  { id: 'hat', name: 'Wide Brim Hat', description: 'Full coverage for outdoor adventures and sun safety.' ,img1:'cap1.png',img2:'cap1.png',img3:'cap1.png' },
+  { id: 'woollen', name: 'Woollen Cap', description: 'Premium knit construction for warmth and comfort.',img1:'cap1.png',img2:'cap1.png',img3:'cap1.png'  },
+  { id: 'bucket', name: 'Bucket Hat', description: 'Iconic street-style silhouette with all-around protection.' ,img1:'cap1.png',img2:'cap1.png',img3:'cap1.png' },
+  { id: 'air-hostess', name: 'Air Hostess Cap', description: 'Elegant, structured headwear for professional uniforms.',img1:'cap1.png',img2:'cap1.png',img3:'cap1.png'  },
+  { id: 'chef', name: 'Chef Cap', description: 'Functional and professional headwear for culinary experts.',img1:'cap1.png',img2:'cap1.png',img3:'cap1.png'  },
+  { id: 'cadet', name: 'Cadet Cap', description: 'Military-inspired flat-top design with a short peak.' ,img1:'cap1.png',img2:'cap1.png',img3:'cap1.png' },
+  { id: 'beanie', name: 'Beanie', description: 'Versatile, snug-fit knit caps for all-season style.' ,img1:'cap1.png',img2:'cap1.png',img3:'cap1.png' },
+  { id: 'fishing', name: 'Fishing Cap', description: 'Specialized protection with neck flaps and secure straps.' ,img1:'cap1.png',img2:'cap1.png',img3:'cap1.png' },
 ];
 
 export const CROWN_TYPES = [
-  { name: 'Low-Profile', description: 'Lower crown height for a closer, more subtle fit.' },
-  { name: 'Mid-Profile', description: 'The standard height for a balanced, classic look.' },
-  { name: 'High-Profile', description: 'Maximum height for a bold, structured statement.' },
-  { name: 'Structured', description: 'Reinforced front panels to maintain shape.' },
-  { name: 'Semi-Structured', description: 'Lightly reinforced for a natural yet clean look.' },
-  { name: 'Unstructured', description: 'Soft, flexible panels for a relaxed, "dad hat" feel.' },
+  { name: 'Low-Profile', description: 'Lower crown height for a closer, more subtle fit.' ,img1:'cap1.png'},
+  { name: 'Mid-Profile', description: 'The standard height for a balanced, classic look.' ,img1:'cap1.png'},
+  { name: 'High-Profile', description: 'Maximum height for a bold, structured statement.',img1:'cap1.png' },
+  { name: 'Structured', description: 'Reinforced front panels to maintain shape.' ,img1:'cap1.png'},
+  { name: 'Semi-Structured', description: 'Lightly reinforced for a natural yet clean look.',img1:'cap1.png' },
+  { name: 'Unstructured', description: 'Soft, flexible panels for a relaxed, "dad hat" feel.' ,img1:'cap1.png'},
 ];
 
 export const PEAK_STYLES = [
-  { name: 'Curved Peak', type: 'Style' },
-  { name: 'Flat Peak', type: 'Style' },
-  { name: 'Round Shape', type: 'Shape' },
-  { name: 'Square Shape', type: 'Shape' },
+  { name: 'Curved Peak', type: 'Style',img1:'cap1.png' },
+  { name: 'Flat Peak', type: 'Style' ,img1:'cap1.png'},
+  { name: 'Round Shape', type: 'Shape' ,img1:'cap1.png'},
+  { name: 'Square Shape', type: 'Shape' ,img1:'cap1.png'},
 ];
-
+export const CLOSURE_STYLES = [
+  { name: 'Velcro', img1:'cap1.png' },
+  { name: 'Plastic Snap',  img1:'cap1.png'},
+  { name: 'Metal Pin Buckle',img1:'cap1.png'},
+  { name: 'Coature NT-OH',img1:'cap1.png'},
+  { name: 'Velcro', img1:'cap1.png' },
+  { name: 'Plastic Snap',  img1:'cap1.png'},
+  { name: 'Metal Pin Buckle',img1:'cap1.png'},
+  { name: 'Coature NT-OH',img1:'cap1.png'},
+  { name: 'Velcro', img1:'cap1.png' },
+  { name: 'Plastic Snap',  img1:'cap1.png'},
+  { name: 'Metal Pin Buckle',img1:'cap1.png'},
+  { name: 'Coature NT-OH',img1:'cap1.png'},
+];
 export const FABRICS = [
   { 
     category: 'Polyester Knitted', 
     items: [
-      { name: 'Dot Knit', colors: ['R.Blue', 'Orange', 'Red'] },
+      { name: 'Dot Knit', colors: [{cn:'R.Blue',img1:'cap1.png'}, {cn:'Orange',img1:'cap1.png'}, {cn:'Red',img1:'cap1.png'}] },
       { name: 'Rice Knit', colors: ['Sky.Blue', 'Green', 'Grey'] },
       { name: 'Crown Knit', colors: ['Sky.Blue', 'Grey', 'Red'] },
       { name: 'Waffle', colors: ['Sky.Blue', 'Green', 'Grey'] },
@@ -117,44 +130,44 @@ export const COLORS = [
 ];
 
 export const BRANDING_TYPES = [
-  { name: 'Embroidery', description: 'Classic high-density thread work.' },
-  { name: '3D Puff Embroidery', description: 'Raised lettering for a bold, tactile effect.' },
-  { name: 'Embroidered Patch', description: 'Detailed patches stitched onto the cap.' },
-  { name: 'Woven Patch', description: 'Fine-detail woven designs for a premium finish.' },
-  { name: 'Leather Patch', description: 'Genuine or faux leather for a rugged, high-end look.' },
-  { name: 'Felt Applique', description: 'Soft, layered fabric for a vintage collegiate feel.' },
-  { name: 'Woven Label', description: 'Subtle branding for seams and closures.' },
-  { name: 'Sublimated Patch', description: 'Full-color photographic detail on fabric.' },
-  { name: 'Screen Print', description: 'Durable, vibrant ink application.' },
-  { name: 'Sublimation', description: 'All-over, permanent color integration.' },
-  { name: 'Heat Transfer', description: 'Precision vinyl or ink transfers.' },
-  { name: 'PVC Patch', description: 'Modern, 3D rubberized branding.' },
+  { name: 'Embroidery', description: 'Classic high-density thread work.' ,img1:'cap1.png'},
+  { name: '3D Puff Embroidery', description: 'Raised lettering for a bold, tactile effect.',img1:'cap1.png' },
+  { name: 'Embroidered Patch', description: 'Detailed patches stitched onto the cap.' ,img1:'cap1.png'},
+  { name: 'Woven Patch', description: 'Fine-detail woven designs for a premium finish.' ,img1:'cap1.png'},
+  { name: 'Leather Patch', description: 'Genuine or faux leather for a rugged, high-end look.' ,img1:'cap1.png'},
+  { name: 'Felt Applique', description: 'Soft, layered fabric for a vintage collegiate feel.' ,img1:'cap1.png'},
+  { name: 'Woven Label', description: 'Subtle branding for seams and closures.' ,img1:'cap1.png'},
+  { name: 'Sublimated Patch', description: 'Full-color photographic detail on fabric.',img1:'cap1.png' },
+  { name: 'Screen Print', description: 'Durable, vibrant ink application.',img1:'cap1.png' },
+  { name: 'Sublimation', description: 'All-over, permanent color integration.' ,img1:'cap1.png'},
+  { name: 'Heat Transfer', description: 'Precision vinyl or ink transfers.',img1:'cap1.png' },
+  { name: 'PVC Patch', description: 'Modern, 3D rubberized branding.',img1:'cap1.png' },
 ];
 
 export const BRANDING_LOCATIONS = [
-  'Front Crown', 'Lower Right Crown', 'Lower Left Crown', 'Left Side Panel', 'Right Side Panel', 'Right Rear Panel', 'Left Rear Panel', 'Right Top Peak', 'Left Top Peak', 'Under Peak', 'Above Closure', 'On Closure'
+ {name:'Front Crown',img1:'cap1.png' }, {name:'Lower Right Crown',img1:'cap1.png' }, 'Lower Left Crown', 'Left Side Panel', 'Right Side Panel', 'Right Rear Panel', 'Left Rear Panel', 'Right Top Peak', 'Left Top Peak', 'Under Peak', 'Above Closure', 'On Closure'
 ];
 
 export const ADDONS = [
-  { name: 'Interior Label', description: 'Premium white printed sweatband label.' },
-  { name: 'Woven Tag', description: 'Subtle red woven tag for side seam detail.' },
-  { name: 'Seam Tape', description: 'Decorative tape covering interior seams.' },
-  { name: 'Peak Rope', description: 'Rope/cord detail on brim with embroidery.' },
-  { name: 'Woven Flag Tag', description: 'Small woven flag label for side seam.' },
-  { name: 'Under Peak Print', description: 'Full-color sublimation print under brim.' },
-  { name: 'Printed Fabric', description: 'Textured geometric print with embossed badge.' },
-  { name: 'Embossed Buckle', description: 'Metal buckle with embossed brand logo.' },
+  { name: 'Interior Label', description: 'Premium white printed sweatband label.' ,img1:'cap1.png' },
+  { name: 'Woven Tag', description: 'Subtle red woven tag for side seam detail.',img1:'cap1.png'  },
+  { name: 'Seam Tape', description: 'Decorative tape covering interior seams.',img1:'cap1.png'  },
+  { name: 'Peak Rope', description: 'Rope/cord detail on brim with embroidery.',img1:'cap1.png'  },
+  { name: 'Woven Flag Tag', description: 'Small woven flag label for side seam.' ,img1:'cap1.png' },
+  { name: 'Under Peak Print', description: 'Full-color sublimation print under brim.' ,img1:'cap1.png' },
+  { name: 'Printed Fabric', description: 'Textured geometric print with embossed badge.' ,img1:'cap1.png' },
+  { name: 'Embossed Buckle', description: 'Metal buckle with embossed brand logo.',img1:'cap1.png'  },
 ];
 
 export const CLIENTS = {
-  brands: ['Roadster', 'Skechers', 'fcuk', 'SS', 'SG', 'Wildcraft', 'Nautica', 'HRX', 'Vavy', 'play'],
+  brands: [{name:'Roadster',img1:'cap1.png' }, 'Skechers', 'fcuk', 'SS', 'SG', 'Wildcraft', 'Nautica', 'HRX', 'Vavy', 'play'],
   associations: [
-    'Malta Cricket', 'Indian Deaf Cricket', 'Baroda Cricket', 'Assam Cricket', 
+    {name:'Malta Cricket',img1:'cap1.png' }, 'Indian Deaf Cricket', 'Baroda Cricket', 'Assam Cricket', 
     'Sharjah Cricket', 'Nagaland Cricket', 'Bihar Cricket', 'Manipur Cricket', 
     'Indian Railways', 'Sikkim Cricket', 'Pondicherry Cricket'
   ],
   teams: [
-    'World Legends 11', 'India Legends', 'Gujarat Giants', 'Manipal Tigers', 
+    {name:'World Legends 11',img1:'cap1.png' }, 'India Legends', 'Gujarat Giants', 'Manipal Tigers', 
     'Bangla Tigers', 'Moratu Marvels', 'Deccan Gladiators', 'Salem Spartans',
     'Dubai Capitals', 'Madurai Panthers', 'Galle Marvels', 'Grand Cholas',
     'Bhopal Leopards', 'Malwa Panthers', 'Chennai Braves', 'Harare Hurricanes',
