@@ -34,6 +34,8 @@ import {
   CLIENTS, 
   CONTACT_INFO 
 } from './data';
+import Header from './Header';
+import Footers from './Footer';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -951,19 +953,24 @@ const Footer = () => (
 
 export default function App() {
   return (
-    <div className="bg-black min-h-screen font-sans selection:bg-red-600 selection:text-white">
-      {/* <Navbar /> */}
-      <Hero />
-      <About />
-      <StylesSection />
-      <CustomizationSection />
-      <FabricSection />
-      <BrandingSection />
-      <AddonsSection />
-      <SizingSection />
-      <PortfolioSection />
-      <ContactSection />
-      {/* <Footer /> */}
+    <div className="bg-black font-sans selection:bg-red-600 selection:text-white">
+      <Header />
+      
+      {/* Add padding-top to account for fixed header */}
+      <main className="pt-32">
+        <Hero />
+        <About />
+        <StylesSection />
+        <CustomizationSection />
+        <FabricSection />
+        <BrandingSection />
+        <AddonsSection />
+        <SizingSection />
+        <PortfolioSection />
+        <ContactSection />
+      </main>
+      
+      <Footers />
     </div>
   );
 }
