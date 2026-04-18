@@ -702,7 +702,7 @@ const SizingSection = () => (
         <div className="p-6 md:p-12 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-12 border-b border-zinc-800">
           <div className="aspect-video bg-zinc-800 rounded-2xl overflow-hidden relative group">
             <img 
-              src="cap1.png" 
+              src="https://kragbuzzsports.com/wp-content/uploads/2026/04/sizing.png" 
               alt="Adult Sizing Guide"
               className="w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
               referrerPolicy="no-referrer"
@@ -713,7 +713,7 @@ const SizingSection = () => (
           </div>
           <div className="aspect-video bg-zinc-800 rounded-2xl overflow-hidden relative group">
             <img 
-              src="cap3.png" 
+              src="https://kragbuzzsports.com/wp-content/uploads/2026/04/sizing2.png" 
               alt="Junior Sizing Guide"
               className="w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700"
               referrerPolicy="no-referrer"
