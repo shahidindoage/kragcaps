@@ -67,42 +67,112 @@ export const FABRICS = [
     category: 'Cotton Knitted', 
     items: [
       { name: 'Terry', colors: [{cn:'Navy Blue',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/cap70.png'}, {cn:'Light Grey',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/cap71.png'}, {cn:'Green',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/cap72.png'}] },
-      { name: 'Hosiery', colors: ['Navy Blue', 'Grey', 'Sky Blue'] }
+      { name: 'Hosiery', 
+        colors: [
+          {cn:'Navy Blue',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/navy.png'},
+          {cn:'Grey',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/grey.png'},
+          {cn:'Sky Blue',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/sky.png'},
+        ] }
     ] 
   },
   { 
     category: 'Polyester Woven', 
     items: [
-      { name: 'NS', colors: ['Maroon/Magenta', 'Navy Blue', 'Dark Teal'] },
-      { name: 'Dobby', colors: ['Black', 'Light Grey', 'Dark Grey'] },
-      { name: 'Twill', colors: ['Sky Blue', 'Red/White', 'Black/Grey'] },
-      { name: 'TZ', colors: ['Grey Blue', 'Solar Blue', 'Blue'] },
-      { name: 'NS Melange', colors: ['Blue', 'Grey'] }
+      { name: 'NS', colors: [
+        {cn:'Maroon/Magenta',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/NS.png'},
+        {cn:'Navy Blue',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/navy-b.png'},
+        {cn:'Dark Teal',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/teal.png'},
+      ] },
+      { name: 'Dobby', colors: [
+        {cn:'Black',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/black.png'},
+        {cn:'Light Grey',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/light-grey.png'},
+        {cn:'Dark Grey',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/dark-grey.png'},
+      ] },
+      { name: 'Twill', colors: [
+        {cn:'Sky Blue/Royal Blue',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/roya.png'},
+        {cn:'Red/White',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/red.png'},
+        {cn:'Black/Grey',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/blackgrey.png'},
+        
+      ] },
+      { name: 'TZ', colors: [
+        {cn:'Grey Blue',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/greyblue.png'},
+        {cn:'Solar Blue',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/solarblue.png'},
+        {cn:'Blue',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/DB.png'},
+        ] },
+      { name: 'NS Melange', colors: [ 
+        {cn:'Blue',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/blue.png'},
+        {cn:'Grey',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/Melange.png'},
+        {cn:'Dark Grey',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/NS-melange.png'}
+        ] }
     ] 
   },
   { 
     category: 'Cotton Woven', 
     items: [
-      { name: 'Twill', colors: ['Navy/Royal Blue', 'Maroon/Black', 'Golden/Beige'] },
-      { name: 'Terry', colors: ['Royal Blue', 'Bright Green', 'Red'] }
+      { name: 'Twill', colors: [
+        {cn:'Navy/Royal Blue',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/navyroyal.png'},
+        {cn:'Maroon/Black',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/maroonblack.png'},
+        {cn:'Golden/Beige',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/goldenbeige.png'},
+       ] },
+      { name: 'Terry', colors: [
+        {cn:'Royal Blue',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/royalblue.png'},
+        {cn:'Bright Green',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/brightgreen.png'},
+        {cn:'Red',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/red-1.png'},
+        ] }
     ] 
   },
   { 
     category: 'Special Materials', 
     items: [
-      { name: 'Matty Canvas', colors: ['Matty', 'Salmon/Coral', 'Charcoal'] },
-      { name: 'Denim', colors: ['Black', 'Grey', 'Navy Dark', 'Light Blue'] },
-      { name: 'Suede', colors: ['Black', 'Grey', 'Red', 'Brown'] },
-      { name: 'Corduroy', colors: ['Black', 'Brown', 'Yellow', 'Grey'] },
-      { name: 'Woollen', colors: ['Red', 'Black', 'Blue', 'Grey'] }
+      { name: 'Matty Canvas', colors: [
+        {cn:'Matty',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/mattycanvas.png'},
+        {cn:'Salmon/Coral',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/Salmon.png'},
+        {cn:'Charcoal',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/charcoal.png'},
+        ] },
+      { name: 'Denim', colors: [
+        {cn:'Black',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/DenimB.png'},
+        {cn:'Grey',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/grey-1.png'},
+        {cn:'Navy Dark',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/navydark.png'},
+        {cn:'Light Blue',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/lightblue.png'},
+      ] },
+      { name: 'Suede', colors: [
+        {cn:'Black',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/black-1.png'},
+        {cn:'Grey',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/grey-2.png'},
+        {cn:'Red',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/red-2.png'},
+        {cn:'Brown',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/brown.png'},
+      ] },
+      { name: 'Corduroy', colors: [
+        {cn:'Black',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/courdroy.png'},
+        {cn:'Brown',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/brown-C.png'},
+        {cn:'Yellow',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/yellow.png'},
+        {cn:'Grey',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/grey-C.png'},
+       ] },
+      { name: 'Woollen', colors: [
+        {cn:'Red',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/red-3.png'},
+        {cn:'Black',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/black-2.png'},
+        {cn:'Blue',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/blue-1.png'},
+        {cn:'Grey',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/grey-3.png'},
+      ] }
     ] 
   },
   { 
     category: 'Printed', 
     items: [
-      { name: 'Cotton Prints', colors: ['Camo', 'Tennis', 'Abstract'] },
-      { name: 'Polyester Prints', colors: ['Blue Camo', 'Dark Camo', 'Geometric'] },
-      { name: 'NS Prints', colors: ['Grey Pattern', 'Grid', 'Dots'] }
+      { name: 'Cotton Prints', colors: [
+        {cn:'Camo',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/1.png'},
+        {cn:'Tennis',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/II.png'},
+        {cn:'Abstract',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/III.png'},
+      ] },
+      { name: 'Polyester Prints', colors: [
+        {cn:'Blue Camo',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/4.png'},
+        {cn:'Dark Camo',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/5.png'},
+        {cn:'Geometric',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/6.png'},
+      ] },
+      { name: 'NS Prints', colors: [
+        {cn:'Grey Pattern',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/7.png'},
+        {cn:'Grid',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/8.png'},
+        {cn:'Dots',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/9.png'},
+        ] }
     ] 
   },
 ];
@@ -211,13 +281,13 @@ export const CLIENTS = {
      {name:'Galle Marvels',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/18.jpg' }, 
      {name:'Grand Cholas',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/17.jpg' }, 
      {name:'Bhopal Leopards',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/24.jpg' }, 
-     {name:'Malwa Panthers',img1:'cap1.png' }, 
+     {name:'Malwa Panthers',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/4-2.jpg' }, 
      {name:'Chennai Braves',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/22.jpg' }, 
-     {name:'Harare Hurricanes',img1:'cap1.png' }, 
+     {name:'Harare Hurricanes',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/3-2.jpg'}, 
      {name:'Miami Lions',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/10-1.jpg' }, 
-     {name:'Delhi Devils',img1:'cap1.png' }, 
+     {name:'Delhi Devils',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/1-2.jpg' }, 
      {name:'Colombo Lions',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/21.jpg' }, 
-     {name:'Brampton Wolves',img1:'cap1.png' }, 
+     {name:'Brampton Wolves',img1:'https://kragbuzzsports.com/wp-content/uploads/2026/04/2-2.jpg' }, 
     
   ]
 };
